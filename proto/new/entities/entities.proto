@@ -1,3 +1,10 @@
 syntax = "proto3";
 
 package new.entities;
+
+option go_package = "github.com/DenisEMPS/protos/api-go/new/entities;entities";
+
+message CreateOrderRequest {
+    string name = 1;
+    string status = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package new.v1;
+
+import "new/entities/entities.proto";
+import "google/protobuf/empty.proto";
+
+option go_package = "github.com/DenisEMPS/protos/api-go/new";
+
+service New {
+    rpc CreateOrder(entities.CreateOrderRequest) returns (google.protobuf.Empty) {};
+}
